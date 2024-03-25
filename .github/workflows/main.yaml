@@ -16,7 +16,7 @@ jobs:
       - name: Download and unzip
         run: |
           mkdir server
-          Invoke-WebRequest -Uri 'https://itchio-mirror.cb031a832f44726753d6267436f3b414.r2.cloudflarestorage.com/build/944282/3652116-archive-default?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=3edfcce40115d057d0b5606758e7e9ee%2F20240325%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240325T223408Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=3971e165fee2d8780c7a47e0bff4417f3428daea539dbbb01c317f6013000a61' -OutFile 'file.zip'
+          Invoke-WebRequest -Uri 'https://itchio-mirror.cb031a832f44726753d6267436f3b414.r2.cloudflarestorage.com/build/944282/3652116-archive-default?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=3edfcce40115d057d0b5606758e7e9ee%2F20240325%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240325T224556Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=edc1cca703cb002d54ab500d5a1c6c7d12fdf7a441ef71c99400086af10d16b1' -OutFile 'file.zip'
           Expand-Archive -Path 'file.zip' -DestinationPath 'server'
 
       - name: Run script
